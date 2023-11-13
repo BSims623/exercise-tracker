@@ -10,7 +10,7 @@ const ExerciseShema = new mongoose.Schema({
     description: {
         type: String
     }
-})
+}, { _id: false })
 
 const UserSchema = new mongoose.Schema({
     username: {
@@ -30,4 +30,4 @@ const UserSchema = new mongoose.Schema({
 })
 
 
-module.exports = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('user', UserSchema)
